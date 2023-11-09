@@ -1,0 +1,17 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "- [Node.js](https://nodejs.org/) installed - [npm](https://www.npmjs.com/) (Node.js package manager) installed - [Docker](https://www.docker.com/) installed (optional, for Docker deployment)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-prom-bundle": "^6.6.0"
+  }
+}

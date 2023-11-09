@@ -1,0 +1,51 @@
+
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- [npm](https://www.npmjs.com/) (Node.js package manager) installed
+- [Docker](https://www.docker.com/) installed (optional, for Docker deployment)
+
+## Getting Started
+
+### Installation & Running Locally 
+Clone the repository:
+
+git clone https://github.com/your-username/your-repo.git
+
+Navigate to the project directory:
+
+cd your-repo
+
+Create a .env file in the project directory to store your environment variable:
+ 
+
+Install dependencies and initialize:
+
+npm init -y
+
+npm install express-prom-bundle express dotenv
+
+
+Start the application:
+
+node app.js
+The application will start, and you'll be able to access the following endpoints:
+
+GET /login: Always returns a 200 status code.
+GET /secret: Returns a JSON object with the "secret" field containing the value from the APP_SECRET environment variable.
+GET /metrics: 
+Make sure to replace "YourSecretValue" in the .env file with your actual secret.
+
+### Building Docker Image
+
+If you prefer to run the application in a Docker container, follow these steps:
+
+1. Build the Docker image:
+
+   ```bash
+   docker build -t your-node-app .
+   
+## Running with Docker
+
+docker run -p 3000:3000 your-node-app

@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Build output
+/build/
+/dist/
+/out/
+
+# misc
+.DS_Store
+*.pem
